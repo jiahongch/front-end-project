@@ -1,0 +1,87 @@
+/*顶级菜单的css*/
+
+/*添加视觉样式*/
+.multi_drop_menu {
+	font: 1em helvetica, arial, sans-serif;
+}
+.multi_drop_menu a {
+	/*让链接充满列表项*/
+	display: block;
+	color: #555;
+	background-color: #eee;
+	padding: .2em 1em;	/*这个样式相对下面的.multi_drop_menu * 而言更加特别*/
+	border-width: 3px;
+	border-color: transparent;
+}
+.multi_drop_menu a:hover {
+	color: #fff;
+	background-color: #aaa;
+}
+.multi_drop_menu a:active {
+	background-color: #fff;
+	color: #ccc;
+}
+/*添加功能样式*/
+.multi_drop_menu * {
+	margin: 0;
+	padding: 0;
+}
+.multi_drop_menu ul {
+	float: left;	/*强制ul包围li*/
+}
+.multi_drop_menu li {
+	float: left;	/*水平排列主菜单*/
+	list-style-type: none;
+	position: relative;	/*为子菜单提供定位上下文*/
+}
+.multi_drop_menu li a {
+	display: block;	/*让链接充满列表项*/
+	border-right-style: solid;
+	background-clip: padding-box;	/*背景只出现在内边距后面*/
+	text-decoration: none;
+}
+.multi_drop_menu li:last-child a {
+	border-right-style: none;
+}
+.multi_drop_menu li ul {
+	display: none;	/*临时隐藏低级菜单*/
+}
+
+/*二级下拉菜单*/
+
+/*添加视觉样式*/
+.multi_drop_menu li ul {
+	width: 9em;
+}
+.multi_drop_menu li li a {
+	border-right-style: none;	/*去掉继承的右边框*/
+	border-top-style: solid;	/*添上上边框*/
+}
+/*添加功能样式*/
+	position: absolute;	/*相对于父菜单项定位*/
+	top: 100%;	/*顶边与父菜单底边对齐*/
+.multi_drop_menu li ul {
+	left: 0;	/*左边与父菜单项对齐*/
+}
+.multi_drop_menu li li {
+	float: none;	/*停止堆叠*/
+}
+.multi_drop_menu li li ul {
+	display: none;	/*继续隐藏三级菜单*/
+}
+.multi_drop_menu li:hover > ul {
+	display: block;	/*父元素悬停时显示下级菜单*/
+}
+
+/*三级下拉菜单*/
+.multi_drop_menu li li ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+/*在子菜单时，父级菜单会高亮*/
+.multi_drop_menu li:hover > a {
+	color: #fff;
+	background-color: #aaa;
+}
