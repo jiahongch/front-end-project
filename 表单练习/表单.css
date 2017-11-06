@@ -1,0 +1,126 @@
+form.stylin_form1 {
+	width: 14em;
+	margin: 20px auto;
+	border: 1px solid #bbb7ea;
+	padding: .5em .5em 0.15em;
+}
+.stylin_form1 h3 {
+	margin: 0;
+	padding: 0 0 0 .2em;
+	font-weight: 600;
+	color: #bbb7ea;
+}
+.stylin_form1 fieldset {
+	margin: 1em 0 0;
+	padding: 0 0 .2em 0;
+	width: 100%;
+	border: 0;
+}
+.stylin_form1 legend {
+	width: 100%;
+	padding: .3em 0;
+	background-color: #bbb7ae;
+}
+.stylin_form1 legend span {
+	display: block;
+	font-size: 1em;
+	line-height: 1.1em;
+	padding: 0 0 0 .4em;
+	font-weight: 700;
+	color: #fff;
+}
+.stylin_form1 section {
+	overflow: hidden;
+	padding: .2em 0 .4em 0;
+	border-bottom: 8px solid #e7e5df;
+}
+.stylin_form1 section:last-child {
+	border-bottom: 0;
+}
+.stylin_form1 section label, .stylin_form1 section h4 {
+	display: block;
+	clear: both;
+	margin: .3em .3em 0 0;
+	padding-bottom: .1em;
+	font-size: .8em;
+	font-family: 'Drois Sans';
+	font-weight: 400;
+	line-height: 1.1;
+}
+.stylin_form1 section label span, .stylin_form1 section h4 span {
+	font-size: .75em;
+	vertical-align: text-top;
+	color: #f00;
+} 
+.stylin_form1 section p.note {
+	font-size: .7em;
+	color: #f00;
+	margin: 0;
+	padding: 0 0 .3em 0;
+}
+.stylin_form1 section input, .stylin_form1 section textarea, .stylin_form1 section select {
+	margin: .2em .5em .2em 0;
+	padding: .2em .4em;
+	color: #000;
+	box-shadow: 1px 1px 3px #ccc;
+	font-size: .8em;
+	font-family: inherit;
+	outline: none;	/*去掉默认蓝色聚焦轮廓线*/
+}
+.stylin_form1 section input, .stylin_form1 section textarea {
+	width: 12em;
+	border: 1px solid #bbb7ae;
+	border-radius: 3px;
+}
+.stylin_form1 section textarea {
+	height: 5em;
+	margin-top: .3em;
+	line-height: 1.1;
+}
+.stylin_form1 section p {
+	margin: .3em .75em 0;
+	clear: both;
+	font-size: .7em;
+	line-height: 1.1;
+	color: #000;
+}
+.stylin_form1 section p.error {
+	color: #f00;	/*使用js动态添加，本例中未使用*/
+}
+.stylin_form1 section section {
+	overflow: hidden;
+	margin: .2em 0 .3em .4em;
+	padding: 0 0 .1em 0;
+	border-bottom: none;
+}
+.stylin_form1 section section input {
+	float: left;
+	clear: both;
+	width: auto;	/*重设继承的宽度*/
+	margin: .1em 0 0 .3em;
+}
+.stylin_form1 section section label {
+	float: left;
+	clear: none;	/*重设继承的值*/
+	width: 15em;
+	margin: .15em 0 0 0.6em;
+	font-weight: normal;
+	font-size: .7em;
+	line-height: 1.2;
+}
+.stylin_form1 section select {
+	margin-left: .4em;
+	font-size: .85em;
+}
+.stylin_form1 section input[type="submit"] {
+	width: auto;	
+	margin: .4em .3em 0 0;
+	font-size: 1em;
+	font-weight: 800;
+	color: #fff;
+	background-color: #bbb7ae;
+	cursor: pointer;
+}
+.stylin_form1 > section:last-child {
+	text-align: center;
+}

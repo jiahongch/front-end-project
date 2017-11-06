@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单</title>
+	<link rel="stylesheet" type="text/css" href="表单.css">
+</head>
+<body>
+	<form class="stylin_form1" action="process_form.php" method="post">
+		<h3>A Stylin' Form</h3>
+		<fieldset>
+			<legend><span>Part 1 &#8226; Basic Controls</span></legend>
+			<section>
+				<p class="note">* indicates required field</p>
+				<label for="user_name">User Name<span> *</span></label>
+				<input type="text" name="user_name" id="user_name">
+				<p>Please select a user name</p>
+			</section>
+			<section>
+				<label for="password">Password<span> *</span></label>
+				<input type="password" name="password" id="password" maxlength="20">
+				<p>Password must be 8 or more characters</p>
+			</section>
+			<section>
+				<label for="description">Description</label>
+				<textarea id="description" name="description" placeholder="Enter the description here."></textarea>
+			</section>
+			<section>
+				<label for="special_date">Date</label>
+				<input type="date" name="special_date" id="special_date" min="2012-09-05">
+			</section>
+		</fieldset>
+		<fieldset>
+			<legend><span>Part 2 &#8226; Multiple-Choice Controls</span></legend>
+			<section>
+				<h4>Select Any Number</h4>
+				<section>
+					<input type="checkbox" id="check1" name="checkset" value="1">
+					<label for="check1">Choice1</label>
+				</section>
+				<section>
+					<input type="checkbox" id="check2" name="checkset" value="2">
+					<label for="check2">Choice2</label>
+				</section>
+				<section>
+					<input type="checkbox" id="check3" name="checkset" value="3">
+					<label for="check3">Choice3</label>
+				</section>
+				<p>You must choose one or more</p>
+			</section>
+			<section>
+				<h4>Select only one</h4>
+				<section>
+					<input checked="checked" id="radio1" type="radio" name="radioset" value="Choice_1">
+					<label for="radio1">Choice 1 is pre-selected and shows the text wraps nicely if it goes to multiple lines.</label>
+				</section>
+				<section>
+					<input id="radio2" type="radio" name="radioset" value="Choice_2">
+					<label for="radio2">Choice 2</label>
+				</section>
+				<section>
+					<input id="radio3" type="radio" name="radioset" value="Choice_3">
+					<label for="radio3">Choice 3</label>
+				</section>
+			</section>
+			<section>
+				<label for="select_choice">Select Your Choice</label>
+				<select id="select_choice" name="select_choice">
+					<option value="0">None</option>
+					<option value="1">Choice 1</option>
+					<option value="2">Choice 2</option>
+					<option value="3">Choice 3</option>
+					<option value="4">Choice 4</option>
+				</select>
+			</section>
+		</fieldset>
+		<section>
+			<input type="submit" value="Submit this form">
+		</section>
+	</form>
+</body>
+</html>
